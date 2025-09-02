@@ -103,3 +103,6 @@ Instruções para rodar o projeto
    - Divulgue campeonatos e arenas.
    - Realize inscrições e navegue pelo painel.
    - Envie mensagens e avaliações.
+
+[▶️ Assista no YouTube o tutorial] https://youtu.be/liXnCk9W9yo?si=8sCZY4pgJSeRkXoy       
+https://youtu.be/XhYv3o7-R1A?si=7h6AZVcun0XbG6O9
