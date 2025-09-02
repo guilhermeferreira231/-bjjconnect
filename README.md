@@ -1,212 +1,101 @@
-📌 BJJ Connect
+FUTBJJ
 
+Vitor Vogel 22302212
+Joao Lucas 22302450
+Victor Marçal 22401377
+Tiago lopes 22302522
+Guilherme Ferreira 22402810
 
-👨‍💻 Integrantes / Matrículas
-
-Guilherme Ferreira - 22402810
-
-João Lucas - 22302450
-
-Tiago Henrique - 22302522
-
-Victor Marçal - 22301377
-
-Vitor Vogel - 22302212
-
-
-🚀 Funcionalidades
-
-O sistema BJJ Connect possui as seguintes funcionalidades principais:
-
-
-1 Cadastro de usuário/atleta
-
-Cadastro de atleta com dados pessoais
-
+1-Cadastro de usuário X
+Cadastro de atleta
+Cadastro de colaborador (com CPF e telefone)
 Validação de senha e CPF
-
 Login automático após cadastro
 
-
-2 Cadastro de colaborador
-
-Cadastro com CPF e telefone
-
-Validação de senha e CPF
-
-Login automático após cadastro
-
-
-3 Login
-
+2-Login X
 Login para atleta e colaborador
-
 Redirecionamento conforme tipo de usuário
+Menu lateral dinâmico (links exclusivos para colaborador)
 
 
-4 Logout
 
-Botão de sair em todas as páginas
-
-Limpa dados do usuário e retorna ao login
-
-5 Divulgação de campeonatos
-
+4-Divulgação de campeonatos X
 Formulário para colaborador divulgar campeonatos
-
-Salva no banco: nome, local, data, premiação, descrição, imagem, colaborador_id
-
+Salva dados no banco (nome, local, data, premiação, descrição, imagem, colaborador_id)
 Mensagem de sucesso após envio
 
-6 Divulgação de arenas
-
-Formulário para colaborador divulgar arenas com modalidade
-
-Salva no banco: nome, endereço, cidade/estado, descrição, modalidade, colaborador_id
-
+5-Divulgação de arenasX 
+Formulário para colaborador divulgar arenas (com modalidade)
+Salva dados no banco (nome, endereço, cidade/estado, descrição, modalidade, colaborador_id)
 Mensagem de sucesso após envio
 
-7 Listagem de campeonatos
+6-Listagem de campeonatosX
+Exibe campeonatos cadastrados no banco com layout padronizado
+Botão "Fazer inscrição" para cada campeonato
 
-Exibe campeonatos cadastrados com layout padronizado
-
-Botão "Fazer inscrição" disponível
-
-8 Inscrição em campeonatos
-
+7-Inscrição em campeonatosX
 Modal de confirmação de inscrição
-
-Inscrição automática com dados do usuário logado
-
-Salva no banco: usuario_id, campeonato_id
-
+Inscrição automática usando dados do usuário logado
+Salva inscrição no banco (usuario_id, campeonato_id)
 Mensagem de sucesso após inscrição
 
-9 Painel do colaborador
-
+8-Painel do colaborador X
 Exibe campeonatos divulgados pelo colaborador logado
+Mostra quantidade de inscritos e informações (nome, email) de cada atleta
 
-Mostra quantidade de inscritos e informações dos atletas
 
-10 Listagem de arenas
 
-Exibe arenas cadastradas no banco
-
-Organizadas por modalidade
-
-11 Visualização dos dados do usuário
-
+10-Visualização dos dados do usuárioX
 Página "Minha Conta" para atletas (nome, email, CPF, campeonatos inscritos)
-
 Página "Meus Dados" para colaborador (ID, nome, email, telefone, tipo)
+Página "Meus Dados Participante" para atletas (dados pessoais e campeonatos inscritos)
+Envio de mensagens para organização
 
-Página "Meus Dados Participante" para atletas
-
-12 Envio de mensagens para organização
-
-Formulário de contato no site
-
+11-Formulário para contato no siteX
 Salva mensagem no banco (mensagens_site)
-
 Mensagem de sucesso após envio
 
-13 Avaliação do site
-
+12-Avaliação do siteX
 Modal de avaliação com estrelas e comentário
-
 Salva avaliação no banco (avaliacoes_site)
-
 Mensagem de sucesso após envio
 
-14 Menu lateral dinâmico
 
+13-Menu lateral dinâmicoX
 Exibe nome do usuário logado e botão de logout
-
 Links exclusivos para colaborador ou atleta
 
-
-
-📂 Estrutura de Diretórios
-
-BJJ-Connect/
-├── backend/                # Código do servidor (API, rotas, banco de dados)
-│   ├── controllers/        # Lógica de controle
-│   ├── models/             # Modelos e entidades do banco
-│   ├── routes/             # Rotas da API
-│   ├── config/             # Configurações (banco, autenticação, etc.)
-│   └── server.js           # Arquivo principal do backend
-│
-├── frontend/               # Aplicação cliente (interface do usuário)
-│   ├── public/             # Arquivos estáticos
-│   ├── src/
-│   │   ├── components/     # Componentes reutilizáveis
-│   │   ├── pages/          # Páginas do sistema
-│   │   ├── services/       # Comunicação com API
-│   │   └── App.js          # Componente principal
-│   └── package.json        # Dependências do frontend
-│
-├── database/               # Scripts do banco de dados
-│   └── schema.sql
-│
-├── README.md               # Documentação do projeto
-└── .gitignore              # Arquivos ignorados no Git
+3-LogoutX
+Botão de sair em todas as páginas
+Limpa dados do usuário e retorna ao login
 
 
 
-⚙️ Como Executar o Projeto
+Instruções para rodar o projeto
+
 1. Pré-requisitos
+   - PHP 7.4+ instalado
+   - MySQL/MariaDB rodando
+   - Servidor local (Wamp)
+   - Navegador web
 
-Node.js (versão recomendada LTS)
+2. Configuração do banco de dados
+   - Importe o script SQL do projeto para criar as tabelas no MySQL.
+   - Edite o arquivo php/config/db.php com os dados do seu banco (host, usuário, senha, nome do banco).
 
-NPM ou Yarn
+3. Estrutura de pastas
+   - Coloque todos os arquivos do projeto na pasta c:\wamp64\www\PIT (ou equivalente no seu servidor local).
 
-Banco de dados MySQL ou PostgreSQL
+4. Inicie o servidor
+   - Abra o Wamp e inicie os serviços Apache e MySQL.
 
+5. Acesse o projeto
+   - No navegador, acesse: http://localhost/PIT/
+   - Use os arquivos HTML para navegar (ex: cadastro.html, login.html, paginainicial.html).
 
-
-2. InstalaçãoClone o repositório
-git clone https://github.com/usuario/repositorio.git
-
-# Acesse a pasta do projeto
-cd BJJ-Connect
-
-# Backend - instale as dependências
-cd backend
-npm install
-
-# Frontend - instale as dependências
-cd ../frontend
-npm install
-
-
-3. Execução
-
-# Iniciar o backend
-cd backend
-npm start
-
-# Iniciar o frontend
-cd ../frontend
-npm start
-
-
-4. Acesso
-
-    URL local: http://localhost:3000
-
-    Usuário padrão: admin
-
-    Senha padrão: admin123
-
-
-📌 Observações
-
-    Todas as funcionalidades listadas estão implementadas e funcionando.
-
-    Melhorias futuras podem incluir:
-
-        Integração com sistemas de pagamento online para inscrições.
-
-        Painel administrativo avançado para gestão de eventos e arenas.
-
-        Notificações em tempo real para atletas e colaboradores.
+6.Testando funcionalidades
+   - Cadastre usuários e colaboradores.
+   - Faça login.
+   - Divulgue campeonatos e arenas.
+   - Realize inscrições e navegue pelo painel.
+   - Envie mensagens e avaliações.
