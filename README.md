@@ -1,9 +1,13 @@
 FUTBJJ
 
 Vitor Vogel 22302212
+
 Joao Lucas 22302450
+
 Victor Marçal 22401377
+
 Tiago lopes 22302522
+
 Guilherme Ferreira 22402810
 
 1-Cadastro de usuário X
